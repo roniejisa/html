@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+
+.tool{
+    background: blueviolet;
+    display: flex;
+    align-items: center;
+}
+
+.tool > *{
+    height: 40px;
+    min-width: 40px;
+    background: white;
+    margin: 5px 10px;
+    border: none;
+}
+
+.save{
+    margin-left: auto;
+}
+
+.content{
+    
+}

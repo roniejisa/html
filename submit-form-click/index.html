@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="test" >
+        <label for="">Ten</label>
+        <input type="text" name="test">
+    </form>
+    <button>submit</button>
+    <script>
+        const form = document.querySelector('form');
+        const button = document.querySelector('button');
+        form.addEventListener('submit',(event) => {
+            event.preventDefault();
+            console.log(form);
+        })
+        button.onclick = () => {
+            form.dispatchEvent(new Event('submit'))            
+        };
+        
+    </script>
+</body>
+</html>

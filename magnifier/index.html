@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Document</title>
+		<link rel="stylesheet" href="./magnifier.css" />
+	</head>
+	<body>
+		<div>
+			<a
+				class="magnifier-thumb-wrapper"
+				href="http://en.wikipedia.org/wiki/File:Starry_Night_Over_the_Rhone.jpg"
+			>
+				<img
+					id="thumb"
+					src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Starry_Night_Over_the_Rhone.jpg/200px-Starry_Night_Over_the_Rhone.jpg"
+					data-large-img-url="http://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Starry_Night_Over_the_Rhone.jpg/400px-Starry_Night_Over_the_Rhone.jpg"
+					data-large-img-wrapper="preview"
+				/>
+			</a>
+			<div class="magnifier-preview" id="preview" style="width: 200px; height: 133px" ></div>
+		</div>
+		<script src="./magnifier.js"></script>
+		<script>
+			var evt = new Event(),
+				m = new Magnifier(evt);
+			m.attach({
+				thumb: "#thumb",
+				zoom: 3,
+				zoomable: true,
+			});
+		</script>
+	</body>
+</html>

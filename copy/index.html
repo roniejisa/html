@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <a data-href="https://roniejisa.vn">1231231</a>
+        <button>test</button>
+        <script>
+            const button = document.querySelector('button');
+            button.onclick = () => copyText.copy(document.querySelector('a').dataset.href);
+            var copyText = (() => {
+                var copyToClipboard = (text) => {
+                    var textarea = document.createElement('textarea');
+                    textarea.textContent = text;
+                    document.body.appendChild(textarea);
+
+                    var selection = document.getSelection();
+                    var range = document.createRange();
+                    //  range.selectNodeContents(textarea);
+                    range.selectNode(textarea);
+                    selection.removeAllRanges();
+                    selection.addRange(range);
+
+                    selection.removeAllRanges();
+
+                    document.body.removeChild(textarea);
+                };
+
+
+                return {
+                    copy: (text) => copyToClipboard(text),
+                };
+            })();
+        </script>
+    </body>
+
+</html>

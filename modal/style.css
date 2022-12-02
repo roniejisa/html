@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap");
+
+:root {
+  --primary-color: #e25a55;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background: linear-gradient(45deg, blue, purple, yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-open-modal {
+  border-radius: 10px;
+  padding: 20px 40px;
+  border: none;
+  outline: none;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #00000050;
+  transition: 0.5s;
+}
+
+.modal__inner {
+  width: 400px;
+  background: white;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: 0.5s;
+}
+
+.modal__header i {
+  cursor: pointer;
+}
+
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--primary-color);
+  padding: 15px;
+  color: white;
+}
+
+.modal__footer {
+  padding: 15px;
+  text-align: right;
+}
+
+.modal__footer button {
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.modal__body h2 {
+  color: var(--primary-color);
+}
+
+.modal__body {
+  padding: 15px;
+}
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hide .modal__inner {
+  transform: translate(-50%, -50%) scale(0);
+}

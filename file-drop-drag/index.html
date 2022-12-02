@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Drop Drag Input File Image</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <form action="" method="POST" enctype="multipart/form-data">
+            <div class="item">
+                <div class="gallery" gallery-of="image[]"></div>
+                <label for="">
+                    <input type="file" name="image[]" multiple />
+                </label>
+            </div>
+            <div class="item">
+                <div class="gallery" gallery-of="gallery[]"></div>
+                <label for="">
+                    <input type="file" name="gallery[]" multiple />
+                </label>
+            </div>
+            <div class="item">
+                <div class="gallery" gallery-of="files[]"></div>
+                <label for="">
+                    <input type="file" name="files[]" multiple />
+                </label>
+            </div>
+            <button>submit</button>
+        </form>
+    </body>
+    <script src="app.js"></script>
+
+</html>

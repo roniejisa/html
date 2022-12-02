@@ -1,0 +1,152 @@
+:root {
+    --success: rgb(0, 255, 0);
+    --warning: rgb(255 224 0);
+    --error: rgb(251, 0, 0);
+
+    --success-light: rgba(0, 255, 0, 0.5);
+    --warning-light: rgba(255, 224, 0, 0.5);
+    --error-light: rgba(255, 0, 0, 0.5);
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 200ms;
+    outline: none;
+}
+
+.btn-success {
+    background: var(--success);
+    color: white;
+}
+.btn-warning {
+    background: var(--warning);
+}
+.btn-error {
+    background: var(--error);
+    color: white;
+}
+
+.btn:active {
+    transform: scale(0.9);
+}
+
+.toastr {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    transition: 300ms ease-out;
+}
+
+.toastr__item {
+    transition: 300ms ease-out;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    border-radius: 5px;
+}
+
+.toastr__item .content {
+    padding: 15px 30px 15px 10px;
+    border: none;
+    border-radius: 5px;
+}
+.toastr__item .content i {
+    margin-right: 10px;
+}
+
+.toastr__item.success {
+    background-color: var(--success-light);
+    border-left: 4px solid var(--success);
+}
+
+.toastr__item.warning {
+    background-color: var(--warning-light);
+    color: black;
+    border-left: 4px solid var(--warning);
+}
+.toastr__item.error {
+    background-color: var(--error-light);
+    border-left: 4px solid var(--error);
+}
+.toastr__item .line {
+    position: absolute;
+    height: 4px;
+    bottom: 0;
+    right: 0;
+    width: 0%;
+}
+.toastr__item.success .line {
+    background: var(--success);
+}
+
+.toastr__item.warning .line {
+    background: var(--warning);
+}
+
+.toastr__item.error .line {
+    background: var(--error);
+}
+
+@keyframes countdown {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes showToastr {
+    0% {
+        transform: translateX(120%);
+    }
+    25% {
+        transform: translateX(-15%);
+    }
+    50% {
+        transform: translateX(-5%);
+    }
+    75% {
+        transform: translateX(-20%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes hideToastr {
+    0% {
+        transform: translateX(-5%);
+    }
+    25% {
+        transform: translateX(-15%);
+    }
+    50% {
+        transform: translateX(-10%);
+    }
+    75% {
+        transform: translateX(-40%);
+    }
+    100% {
+        transform: translateX(150%);
+    }
+}

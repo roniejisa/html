@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+section {
+    height: 100vh;
+}
+#home {
+    background: linear-gradient(to bottom, #240897, #082497);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+#home h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+#home .description {
+    font-size: 20px;
+}
+#about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box {
+    background: #972408;
+    color: white;
+    max-height: 200px;
+    margin: 0 50px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.box .title {
+    font-size: 30px;
+}
+
+#team {
+    background: linear-gradient(to bottom, #240897 50%, white 50%);
+    display: flex;
+    align-items: center;
+}
+.member {
+    padding: 15px;
+    margin: 0 30px;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 2.2px 4.3px 4.3px #972408;
+}
+
+.member .name {
+    font-size: 20px;
+    color: #240897;
+}
+
+.left-to-right {
+    transform: translateX(-200%);
+    transition: 1s;
+}
+
+.left-to-right.start {
+    transform: translateX(0);
+}
+
+.left-to-right {
+    transform: translateX(-200%);
+    opacity: 0;
+    transition: 1s;
+}
+
+.right-to-left {
+    transform: translateX(200%);
+    opacity: 0;
+    transition: 1s;
+}
+
+.bottom-to-top {
+    transform: translateY(200%);
+    opacity: 0;
+    transition: 1s;
+}
+
+.start {
+    transform: translateX(0);
+    opacity: 1;
+}

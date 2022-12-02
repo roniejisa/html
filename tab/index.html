@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Document</title>
+        <style>
+            [tab-rs] {
+                background-color: blue;
+                color: white;
+            }
+
+            [tab-rs-target-show] {
+                background-color: red;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <ul class="flex">
+            <li class="cursor-pointer duration-500" tab-rs-target-show tab-rs-target="123">Ok 1</li>
+            <li class="cursor-pointer duration-500" tab-rs-target="234">Ok 2</li>
+        </ul>
+        <div>
+            <div tab-rs="123" tab-rs-show class="font-bold h-0 opacity-0 invisible pointer-events-none duration-500">
+                Ahuhu
+            </div>
+            <div tab-rs="234" class="h-0 opacity-0 invisible pointer-events-none duration-500">
+                Test nooi dung daif
+                Test nooi dung daif
+                Test nooi dung daif
+                Test nooi dung daif
+                Test nooi dung daif
+                Test nooi dung daif
+                Test nooi dung daif
+                Test nooi dung daif
+                Test nooi dung daif
+                Test nooi dung daif
+                Test nooi dung daif
+                Test nooi dung daif
+                Test nooi dung daif
+                Test nooi dung daif
+                Test nooi dung daif
+                Test nooi dung daif
+            </div>
+            <div tab-rs="234" class="h-0 opacity-0 invisible pointer-events-none duration-500">
+                Ahihi
+            </div>
+            <div tab-rs="234" class="h-0 opacity-0 invisible pointer-events-none duration-500">
+                Ahihi
+            </div>
+            <div tab-rs="234" class="h-0 opacity-0 invisible pointer-events-none duration-500">
+                Ahihi
+            </div>
+        </div>
+        <script src="Tab.js" type="module"></script>
+    </body>
+
+</html>

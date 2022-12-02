@@ -1,0 +1,74 @@
+.upload_imgs {
+	display: flex;
+	flex-wrap: wrap;
+    gap: 10px;
+}
+.upload_imgs .upload {
+	position: relative;
+}
+
+.upload_imgs .image-preview {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-repeat: no-repeat;
+	top: 0;
+	left: 0;
+	background-position: center;
+	background-color: white;
+	background-size: contain;
+	overflow: hidden;
+}
+
+.upload_imgs .image-preview .image-action button {
+	background: none;
+}
+
+.upload_imgs .image-preview .image-action button i {
+	color: white;
+}
+
+.upload_imgs .image-preview .image-action {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	padding: 5px 0;
+	transform: translateY(100%);
+	transition: 0.4s;
+}
+
+.upload_imgs .image-preview:hover .image-action {
+	transform: initial;
+}
+
+.upload_imgs .upload {
+	text-align: center;
+}
+
+.upload_video label,
+.upload_imgs label {
+	width: 88px;
+	height: 88px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	border: 1px dashed #adb5c2;
+	border-radius: 5px;
+	position: relative;
+	z-index: 0;
+}
+
+.upload_video label span,
+.upload_imgs label span {
+	border: 1px solid #adb5c2;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+}
+.upload_video label span i,
+.upload_imgs label span i {
+	color: #adb5c2;
+}

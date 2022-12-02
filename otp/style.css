@@ -1,0 +1,19 @@
+[otp-rs] {
+    padding: 10px;
+    text-align: center;
+}
+
+[otp-rs] input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    transition: 0.5s;
+    outline: none;
+    border: 1px solid #ebebeb;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+[otp-rs] input:focus {
+    box-shadow: 2.2px 4.3px 4.3px green;
+}

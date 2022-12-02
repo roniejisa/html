@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.range {
+    margin-top: 15px;
+    width: 600px;
+    border-radius: 25px;
+    height: 50px;
+    border: 1px solid black;
+    background: white;
+    box-shadow: 2.2px 4.3px 4.3px #0000006e;
+    position: relative;
+    overflow: hidden;
+}
+
+.process {
+    position: absolute;
+    background: linear-gradient(45deg, purple, blue, red);
+    width: 10%;
+    height: 100%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    cursor: n-resize;
+}
+
+input[type="range"] {
+    appearance: none;
+    width: 600px;
+    height: 50px;
+    background: linear-gradient(to right, red, blue);
+    border-radius: 25px;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+}
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 50px;
+    height: 50px;
+    background: yellowgreen;
+    border-radius: 50%;
+}

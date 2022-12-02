@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form Validate</title>
+        <link rel="stylesheet" href="./FileUpload.css">
+    </head>
+
+    <body>
+        <form action="" class="form-validate" data-success="abcd.234" parent=".test" gallery="gallery-of" file absolute>
+            <div class="test">
+                <label for="">list anh 2</label>
+                <label data-class="abcd 123" box-list-image for="img-abcd">
+                    <input type="file" class="filepond" name="abcd[]" id="img-abcd" rules="required" no-absolute has-border multiple>
+                    <label class="box-show" for="img-abcd">
+                        <i class="fa-solid fa-plus"></i>
+                        <p>Thêm hình ảnh & Video</p>
+                    </label>
+                    <div class="row g-2" gallery-of="abcd"></div>
+                </label>
+            </div>
+            <div class="test">
+                <label for="">list anh 1</label>
+                <label data-class="abcd ewqeq" box-list-image for="cde">
+                    <input type="file" class="filepond" name="cde[]" id="cde" rules="required" multiple>
+                    <label class="box-show" for="img-cde">
+                        <i class="fa-solid fa-plus"></i>
+                        <p>Thêm hình ảnh & Video</p>
+                    </label>
+                    <div class="row g-2" gallery-of="cde"></div>
+                </label>
+            </div>
+            <!-- <div class="test">
+                <input type="radio" name="start[1]" rules="required" value="1" no-absolute>
+                <input type="radio" name="start[1]" rules="required" value="2" no-absolute>
+                <input type="radio" name="start[1]" rules="required" value="3" no-absolute>
+                <input type="radio" name="start[1]" rules="required" value="4" no-absolute>
+                <input type="radio" name="start[1]" rules="required" value="5" no-absolute>
+            </div>
+            <div>
+                <input type="radio" name="start[2]" rules="required" value="1">
+                <input type="radio" name="start[2]" rules="required" value="2">
+                <input type="radio" name="start[2]" rules="required" value="3">
+                <input type="radio" name="start[2]" rules="required" value="4">
+                <input type="radio" name="start[2]" rules="required" value="5">
+            </div> -->
+            <button type="submit">luu</button>
+        </form>
+        <script type="module" src="./ValidateFormFile.js" defer></script>
+    </body>
+
+</html>

@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+        url(./cool.jpg) no-repeat center/cover;
+    transition: all 500ms;
+}
+
+#app {
+    width: 400px;
+    border-radius: 10px;
+    padding: 30px 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+        url(./cool.jpg) no-repeat center/cover;
+    transition: all 500ms;
+    box-shadow: 2.2px 4.3px 4.3px #0000006e;
+}
+
+#app input {
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 0 15px 0 15px;
+    transition: 0.5s;
+    border: none;
+    box-shadow: 2px 3px 4.3px rgba(0, 0, 0, 0.5);
+}
+
+#app input:focus {
+    box-shadow: 2.2px 4.3px 4.3px #0000006e;
+    border-radius: 15px 0 15px 0;
+}
+
+.content {
+    margin-top: 40px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.content .capital {
+    font-size: 32px;
+    color: white;
+    text-shadow: 1px 2px 3px black;
+}
+.time {
+    color: white;
+}
+.temperature {
+    padding: 5px;
+    background: rgb(255, 255, 255, 0.5);
+    font-size: 65px;
+    border-radius: 10px;
+    margin: 30px;
+    color: white;
+    text-shadow: 2px 3px 10px black;
+    box-shadow: 3px 5px 8px black;
+}
+
+.short-desc {
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    color: white;
+    text-transform: capitalize;
+}
+
+.more-desc {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    color: white;
+    filter: drop-shadow(4px 4px 5px black);
+}
+
+.content.hide {
+    opacity: 0;
+}
