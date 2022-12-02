@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tooltip</title>
+        <script src='https://cdn.tailwindcss.com'></script>
+    </head>
+
+    <body class="h-[2000px]">
+        <div class="h-screen w-full flex justify-center items-center gap-[1rem]">
+            <button class="p-2 border rounded-md" tooltip-rs="🥹🥹🥹🥹" tooltip-rs-position="left">Left</button>
+            <button class="p-2 border rounded-md" tooltip-rs="😝😝😝😝" tooltip-rs-position="">Top</button>
+            <button class="p-2 border rounded-md" tooltip-rs="😏😏😏😏" tooltip-rs-position="bottom">Bottom</button>
+            <button class="p-2 border rounded-md" tooltip-rs="😂😂😂😂" tooltip-rs-position="right">Right</button>
+        </div>
+        <script src="Tooltip.js" defer type="module"></script>
+    </body>
+
+</html>

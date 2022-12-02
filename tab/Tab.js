@@ -107,5 +107,8 @@ class TabRS {
 	};
 }
 
-window["tabRS"] = new TabRS();
+window.addEventListener("DOMContentLoaded", function () {
+	window["tabRS"] = new TabRS();
+});
+
 export default TabRS;

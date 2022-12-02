@@ -9,9 +9,23 @@
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
 
-    <body>
-        <a href="tab">Tab</a>
-        <a href="modal">Modal</a>
+    <body class="p-[1rem]">
+        <div class="flex mx-[-1rem] flex-wrap gap-[1rem]">
+            <div class="px-[1rem] max-w-[375px] w-full">
+                <h2 class="text-2xl mb-3 font-semibold">HTML & JS</h2>
+                <ul class="border-[1px] border-black rounded-md overflow-hidden">
+                    <li>
+                        <a class="block  p-3 transition hover:text-pink-600 hover:bg-black" href="tab">Tab</a>
+                    </li>
+                    <li>
+                        <a class="block  p-3 transition hover:text-pink-600 hover:bg-black" href="tooltip">Tooltip</a>
+                    </li>
+                    <li>
+                        <a class="block border-top border-black border-t-[1px] p-3 transition hover:text-pink-600 hover:bg-black" href="modal">Modal</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </body>
 
 </html>

@@ -99,5 +99,10 @@ class ModalRS {
 		this.hiddenModal();
 	};
 }
-window["modalRS"] = window["rsModal"] = window["MODAL_RS"] = new ModalRS();
+window.addEventListener("DOMContentLoaded", function () {
+	window["modalRS"] =
+		window["rsModal"] =
+		window["MODAL_RS"] =
+			new ModalRS();
+});
 export default ModalRS;
