@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Modal</title>
-    <link rel="stylesheet" type="text/css" href="./fontawesome/css/all.css" />
-    <link rel="stylesheet" type="text/css" href="./style.css" />
-  </head>
 
-  <body>
-    <button class="btn-open-modal" type="button">Show Modal</button>
-    <div class="modal hide">
-      <div class="modal__inner">
-        <div class="modal__header">
-          Wecome to Roniejisa
-          <i class="fa-solid fa-xmark"></i>
-        </div>
-        <div class="modal__body">
-          <h2>Modal</h2>
-          <p>Đây là phần body của modal</p>
-        </div>
-        <div class="modal__footer">
-          <button type="button">Đóng</button>
-        </div>
-      </div>
-    </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Modal</title>
+        <script src='https://cdn.tailwindcss.com'></script>
+    </head>
 
-    <script src="./script.js" defer></script>
-  </body>
+    <body>
+        <div class="flex gap-2">
+            <button class="border p-2 rounded-md" modal-rs-target="modalNoClick">Hiển modal không cho click bên ngoài</button>
+            <button class="border p-2 rounded-md" modal-rs-target="modalNormal">Hiển modal bình thường</button>
+        </div>
+        <div modal-rs-show modal-rs-not-click-outside class="pointer-events-none invisible fixed top-0 right-0 left-0 z-50 flex h-full w-full items-center justify-center overflow-hidden overflow-y-auto overflow-x-hidden bg-[#00000099] opacity-0 duration-500 md:inset-0" modal-rs="modalNoClick" style="" tabindex="-1">
+            <div class="lg:max-w-[800px] relative mx-auto max-h-screen w-full max-w-[90%] overflow-y-auto rounded-md md:h-auto" modal-rs-content>
+                <div class="p-3 bg-white rounded-md">
+                    Modal không được click bên ngoài và tự động show
+                    <button class="p-2 rounded-md border block" modal-rs-close>Ẩn</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="pointer-events-none invisible fixed top-0 right-0 left-0 z-50 flex h-full w-full items-center justify-center overflow-hidden overflow-y-auto overflow-x-hidden bg-[#00000099] opacity-0 duration-500 md:inset-0" modal-rs="modalNormal" style="" tabindex="-1">
+            <div class="lg:max-w-[800px] relative mx-auto max-h-screen w-full max-w-[90%] overflow-y-auto rounded-md md:h-auto" modal-rs-content>
+                <div class="p-3 bg-white rounded-md">
+                    Modal bình thường
+                    <button class="p-2 rounded-md border block" modal-rs-close>Ẩn</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="Modal.js" type="module" defer></script>
+    </body>
+
 </html>
